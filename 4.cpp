@@ -17,7 +17,7 @@ int main () {
 		
 	posicao = 0;
 	
-	printf("\Selecione a opção desejada:\n 1 - Cadrasto\n 2 - Leitura\n 3 - Edição\n 4 - Apagar\n 5 - Sair\n ");
+	printf("\Selecione a opÃ§Ã£o desejada:\n 1 - Cadrasto\n 2 - Leitura\n 3 - EdiÃ§Ã£o\n 4 - Apagar\n 5 - Sair\n ");
 	printf("\n");	
 	scanf("%i", &opcao);
 	
@@ -25,52 +25,52 @@ int main () {
 	
 	switch(opcao){
 		
-		case 1: printf("\nCADRASTO\nDigite a posição no vetor: ");
-				scanf("%i", &posicao);
+		case 1: printf("\nCADRASTO\nDigite a posiÃ§Ã£o no vetor: ");
+			scanf("%i", &posicao);
 				
-				if(vetor[posicao] == 0){
-					printf("\nDigite o novo cadastro: ");
-					scanf("%i", &vetor[posicao]);
-					printf("\n");
-				}else{
-					printf("\nA posição digitada já tem um cadastro!\n");
-				}
-				
-				system("pause");
-				break;	
-				
-		case 2: printf("\nLEITURA\nDigite a posição no vetor: ");
-				scanf("%i", &posicao);	
-				
-				printf("\nO cadastro da posição %iº do vetor é: %i\n", posicao, vetor[posicao]);
-				printf("\n");
-				system("pause");
-				printf("\n");
-				break;
-				
-		case 3: printf("\nEDIÇÃO\nDigite a posição no vetor: ");
-				scanf("%i", &posicao);
-				
-				printf("\nDigite um novo cadastro para posição %iº do vetor: ", posicao);
+			if(vetor[posicao] == 0){
+				printf("\nDigite o novo cadastro: ");
 				scanf("%i", &vetor[posicao]);
 				printf("\n");
-				system("pause");
-				break;
+			}else{
+				printf("\nA posiÃ§Ã£o digitada jÃ¡ tem um cadastro!\n");
+			}
 				
-		case 4: printf("\nAPAGAR\nDigite a posição no vetor: ");
-				scanf("%i", &posicao);
+			system("pause");
+			break;	
 				
-				vetor[posicao] = 0;
+		case 2: printf("\nLEITURA\nDigite a posiÃ§Ã£o no vetor: ");
+			scanf("%i", &posicao);	
+			
+			printf("\nO cadastro da posiÃ§Ã£o %iÂº do vetor Ã©: %i\n", posicao, vetor[posicao]);
+			printf("\n");
+			system("pause");
+			printf("\n");
+			break;
 				
-				printf("\nO cadastro da posição %iº do vetor foi apagada/zerada!\n", posicao);
-				printf("\n");
-				system("pause");
-				break;
+		case 3: printf("\nEDIÃ‡ÃƒO\nDigite a posiÃ§Ã£o no vetor: ");
+			scanf("%i", &posicao);
+				
+			printf("\nDigite um novo cadastro para posiÃ§Ã£o %iÂº do vetor: ", posicao);
+			scanf("%i", &vetor[posicao]);
+			printf("\n");
+			system("pause");
+			break;
+				
+		case 4: printf("\nAPAGAR\nDigite a posiÃ§Ã£o no vetor: ");
+			scanf("%i", &posicao);
+				
+			vetor[posicao] = 0;
+			
+			printf("\nO cadastro da posiÃ§Ã£o %iÂº do vetor foi apagada/zerada!\n", posicao);
+			printf("\n");
+			system("pause");
+			break;
 				
 		case 5: printf("O foi programa finalizado.\n");
-				printf("\n");
-				system("pause");
-				break;
+			printf("\n");
+			system("pause");
+			break;
 	}
 	
 	system("cls");
