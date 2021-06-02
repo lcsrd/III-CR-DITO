@@ -25,7 +25,8 @@ int main () {
 	
 	switch(opcao){
 		
-		case 1: printf("\nCADRASTO\nDigite a posição no vetor: ");
+		case 1: printf("CADRASTO\n");
+			printf("\nDigite a posição no vetor: ");
 			scanf("%i", &posicao);
 				
 			if(vetor[posicao] == 0){
@@ -39,16 +40,18 @@ int main () {
 			system("pause");
 			break;	
 				
-		case 2: printf("\nLEITURA\nDigite a posição no vetor: ");
+		case 2: printf("LEITURA\n");
+			printf("\nDigite a posição no vetor: ");
 			scanf("%i", &posicao);	
-			
+				
 			printf("\nO cadastro da posição %iº do vetor é: %i\n", posicao, vetor[posicao]);
 			printf("\n");
 			system("pause");
 			printf("\n");
 			break;
 				
-		case 3: printf("\nEDIÇÃO\nDigite a posição no vetor: ");
+		case 3: printf("EDIÇÃO\n");
+			printf("\nDigite a posição no vetor: ");
 			scanf("%i", &posicao);
 				
 			printf("\nDigite um novo cadastro para posição %iº do vetor: ", posicao);
@@ -57,9 +60,10 @@ int main () {
 			system("pause");
 			break;
 				
-		case 4: printf("\nAPAGAR\nDigite a posição no vetor: ");
+		case 4: printf("APAGAR\n");
+			printf("\nDigite a posição no vetor: ");
 			scanf("%i", &posicao);
-				
+			
 			vetor[posicao] = 0;
 			
 			printf("\nO cadastro da posição %iº do vetor foi apagada/zerada!\n", posicao);
